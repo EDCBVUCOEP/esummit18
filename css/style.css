@@ -1,7 +1,6 @@
 body{
-    /* background-color: #151617; */
     background-color: black;
-
+    font-family: 'Montserrat', sans-serif;
 
 }
 #particles-js{
@@ -17,4 +16,10 @@ body{
     width: 50%;
     top: 27%;
     left: 25%;
+}
+
+#register{
+    position: relative;
+    top: 57%;   
+    left: 45%; 
 }
