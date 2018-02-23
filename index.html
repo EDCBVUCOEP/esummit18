@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>E-Summit'18</title>
-    <!-- linking of cdn's -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- favicon -->
-    <link href="img/flavcon_esummit.icon" rel="icon">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-Summit'18</title>
+  <!-- linking of cdn's -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- favicon -->
+  <link href="img/Untitled-2 - Copy.icon" rel="icon">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114670883-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114670883-1');
+  </script>
 </head>
+
 <body>
-<!--
+  <!--
     <header id="header">
         <nav>
 
         </nav>
     </header> -->
 
-    <section id='main_frame'>
-        <div id="particles-js">
-            <img id="logo" src="img/esummit_logo[1].png" alt="logo">
-            <br>
-            <button id="register" class="btn btn-outline-primary btn-lg ">REGISTER</button>
-        </div>
-    </section>
+  <section>
+    <div id="particles-js" >
+      <div class="logo ">
+        <img id="logo" class="img-responsive center-block"  src="img/esummit_logo[1].png" alt="logo">
+      </div>
+      <br>
+      <div class="wrapper ">
+        <button id="register" class="btn btn-outline-primary btn-lg ">REGISTER</button>
+      </div>
+    </div>
+  </section>
 
-    <section id="event">
+  <section id="event">
 
-    </section>
-
-
+  </section>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS.load('particles-js', 'js/particlesjs-config 3.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-    </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'js/particlesjs-config 3.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
 </body>
+
 </html>
