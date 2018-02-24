@@ -1,0 +1,160 @@
+<! DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style></style>
+</head>
+
+<body>
+
+    <h1 style="padding-top:20px" align="center">REGISTRATION</h1>
+</body>
+<div class="container">
+    <form method="post">
+        <form>
+
+
+            <div class="form-group">
+                <label for="inputFname" class="col-form-label">Company/Startup Name</label>
+                <input type="Name" class="form-control" id="inputCname" name="inputCname" placeholder="Startup">
+            </div>
+
+            <div class="form-group">
+                <label for="inputLname" class="col-form-label">Name of the Founder(S)/Contact Person</label>
+                <input type="Name" class="form-control" id="inputLname" name="inputLname" placeholder="Name of the Founder">
+            </div>
+
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Contact Number</label>
+                <input type="text" class="form-control" id="contact" name="contact" aria-describedby="emailHelp" placeholder="Enter your contact number">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your contact with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter your email-id">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="subject" class="col-form-label">Number of interns/employees recruitment required</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Your Answer">
+            </div>
+        </form>
+    </form>
+</div>
+<div class="container">
+    <legend class="col-form-group">Domain of recruitment</legend>
+    <form>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+            Technical (Specify in others option. Ex: Web development, App development etc.)
+          </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+        Content writing
+        </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+        Designing
+          </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+            Sales/Marketing
+          </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+            Research fellowship
+          </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+            Others
+          </label>
+        </div>
+    </form>
+</div>
+<div class="container">
+    <legend class="col-form-group">Range of stipend to be offered per month (This question is only for reference, we understand it depends on work profile and is subjected to change) For internship only
+    </legend>
+
+    <form>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 3,000 anbd below</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 3,000 - 8,000</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 8,000- 13,000</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 13,000 - 17,000</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 17,000- 20,000</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 20,000 and above</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Letter of recommendation Only</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Other:</label>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <legend class="col-form-group">Range of salary to be offered per Annum (This question is only for reference, we understand it depends on work profile and is subjected to change)For Placements only
+
+    </legend>
+    <form>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 1.8 L and Below</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 1.8 L - 2.5 L</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 2.5 L - 3.5 L</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 3.5 L - 4.5 L</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Rs 4.5 L and Above</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Other:</label>
+        </div>
+
+    </form>
+</div>
+<div class="container">
+    <button id="submit" type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Register</button>
+</div>
+</body>
+
+</html>
+  
