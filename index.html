@@ -11,7 +11,8 @@
   <!-- <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/bootstrap-reboot.css">
   <link rel="stylesheet" href="css/bootstrap.css"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <!-- favicon -->
   <link href="img/Untitled-2 - Copy.icon" rel="icon">
@@ -30,39 +31,133 @@
 </head>
 
 <body>
-  <!--
-    <header id="header">
-        <nav>
-
-        </nav>
-    </header> -->
-
-  <section>
-    <div id="particles-js" >
-      <div class="logo ">
-        <img id="logo" class="img-responsive center-block"  src="img/esummit_logo[1].png" alt="logo">
+  <section >
+    <div id="particles-js">
+        <div class="logo ">
+        <img id="logo" class="img-responsive center-block" src="img/esummit_logo[1].png" alt="logo">
       </div>
       <br>
       <div class="wrapper ">
         <button id="register" class="btn btn-outline-primary btn-lg ">REGISTER</button>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'js/particlesjs-config 3.json', function () {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
   </section>
+  <!--==========================
+      Team Section
+    ============================-->
+  <section id="team">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title">What We Have At</h3>
+        <h3 class="section-title">Esummit 2018</h3>
+        <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="img/team-1.jpg" alt="">
+            </div>
+            <h4>COMPETITIONS</h4>
+            <!-- <span>Chief Executive Officer</span>
+            <div class="social">
+              <a href="">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-google-plus"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>-->
+          </div>
+        </div>
 
-  <section id="event">
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="img/team-2.jpg" alt="">
+            </div>
+            <h4>WORKSHOPS</h4>
+            <!-- <span>Product Manager</span>
+            <div class="social">
+              <a href="">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-google-plus"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div> -->
+          </div>
+        </div>
 
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="img/team-3.jpg" alt="">
+            </div>
+            <h4>PANEL DISCUSSIONS</h4>
+            <!-- <span>CTO</span>
+            <div class="social">
+              <a href="">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-google-plus"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="member">
+            <div class="pic">
+              <img src="img/team-4.jpg" alt="">
+            </div>
+            <h4>HIGHLIGHT EVENT</h4>
+            <!-- <span>Accountant</span>
+            <div class="social">
+              <a href="">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-google-plus"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'js/particlesjs-config 3.json', function() {
-      console.log('callback - particles.js config loaded');
-    });
-  </script>
+  <!-- #team -->
 </body>
 
 </html>
