@@ -12,7 +12,7 @@
 <meta name="GENERATOR" content="Evrsoft First Page">
 </head>
 <body class="container">
-	<h1 class="display-4 text-center mt-4"><ul>E-Summit'18 Fee Payment</ul></h1>
+	<h1 class="display-4 text-center mt-4"><strong><ul>E-Summit'18 Fee Payment</ul></strong></h1>
 	<form class="form-group mt-4" method="post" action="pgRedirect.php">
 		<div class="form-group">
 		<table border="1" class="container">
