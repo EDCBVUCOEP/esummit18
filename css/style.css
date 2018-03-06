@@ -188,6 +188,53 @@ body{
   background: rgb(47, 165, 255);
 }
 
+/* Call To Action Section
+--------------------------------*/
+#call-to-action {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/196650/pexels-photo-196650.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#call-to-action .cta-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-action .cta-text {
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  #call-to-action .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+#call-to-action .cta-btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+  background: #2dc997;
+  border: 2px solid #2dc997;
+}
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
