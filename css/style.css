@@ -74,7 +74,7 @@ body{
   }
   
   #team .member .social a:hover {
-    color: #2dc997;
+    color: rgb(47, 165, 255);
   }
   
   #team .member .social i {
@@ -100,7 +100,7 @@ body{
 
 #contact .info i {
   font-size: 32px;
-  color: #2dc997;
+  color: rgb(47, 165, 255);
   float: left;
 }
 
@@ -134,13 +134,13 @@ body{
 }
 
 #contact .social-links a:hover {
-  background: #2dc997;
+  background: rgb(47, 165, 255);
   color: #fff;
 }
 
 #contact .form #sendmessage {
-  color: #2dc997;
-  border: 1px solid #2dc997;
+  color: rgb(47, 165, 255);
+  border: 1px solid rgb(47, 165, 255);
   display: none;
   text-align: center;
   padding: 15px;
@@ -177,7 +177,7 @@ body{
 }
 
 #contact .form button[type="submit"] {
-  background: #2dc997;
+  background: rgb(47, 165, 255);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -185,7 +185,7 @@ body{
 }
 
 #contact .form button[type="submit"]:hover {
-  background: #51d8ad;
+  background: rgb(47, 165, 255);
 }
 
 /*--------------------------------------------------------------
