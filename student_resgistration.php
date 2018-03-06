@@ -1,3 +1,7 @@
+<?php
+    include'registration_process.php';
+?>
+
 <! DOCTYPE html>
 <html>
 
@@ -28,13 +32,13 @@
 
             <div class="form-group">
                 <label for="exampleInputEmail1">Contact Number</label>
-                <input type="text" class="form-control" id="contact" name="contact" aria-describedby="emailHelp" placeholder="Enter your contact number">
+                <input type="text" class="form-control" id="contact" name="contact" aria-describedby="emailHelp" maxlength="10" placeholder="Enter your contact number">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your contact with anyone else.</small>
             </div>
 
             <div class="form-group">
                 <label for="exampleInputEmail2">WhatsApp Number</label>
-                <input type="text" class="form-control" id="contact" name="wcontact" aria-describedby="emailHelp" placeholder="Enter your WhatsApp Number">
+                <input type="text" class="form-control" id="contact" name="wcontact" aria-describedby="emailHelp" maxlength="10" placeholder="Enter your WhatsApp Number">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your contact with anyone else.</small>
             </div>
 
@@ -46,27 +50,10 @@
         
     
 </div>
-<!-- <form>
-    <div class="container">
-            <legend class="col-form-group">Profession</legend>
-    <input onclick="document.getElementById('custom').disabled = false; document.getElementById('charstype').disabled = true;" type="radio" name="type" checked="checked">
-    <!-- <input type="text" name="custom" id="custom" placeholder="Year Of Graduation" > -->
-    <!-- <label for="exampleFormControlSelect1" id="custom">Year Of Graduation</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-    <br><br>
-    <input onclick="document.getElementById('custom').disabled = true; document.getElementById('charstype').disabled = false;" type="radio" name="type" value="customurl">Working
-    </div>
-</form> -->
 <div class="container">
     <h3>Profession</h3>
 <div class="custom-control custom-radio">
-  <input type="radio" id="customRadio1" name="profession" class="custom-control-input">
+  <input type="radio" id="customRadio1" name="profession" value="student" class="custom-control-input">
   <label class="custom-control-label" for="customRadio1">Student:<br></label>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Year Of Graduation</label>
@@ -84,7 +71,7 @@
 
 </div>
 <div class="custom-control custom-radio">
-  <input onclick="document.getElementById('year_of_grad').disabled = true; document.getElementById('year_of_grad').disabled = false; " type="radio" id="customRadio2" name="profession" class="custom-control-input">
+  <input onclick="document.getElementById('year_of_grad').disabled = true; document.getElementById('year_of_grad').disabled = false; " type="radio" id="customRadio2" name="profession" value="working Professional" class="custom-control-input">
   <label class="custom-control-label" for="customRadio2">Working</label>
 </div>
 </div>
@@ -135,7 +122,7 @@
         </div>
 
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Jugaad" id="defaultCheck1">
+            <input class="form-check-input" type="checkbox" name="jugaad" value="Jugaad" id="defaultCheck1">
             <label class="form-check-label" for="defaultCheck1">
                 Jugaad
           </label>
@@ -155,9 +142,15 @@
             <label><input type="radio" name="sipp" value="no">No</label>
         </div>  
 </div>
+<div class="container">
+            <div class="form-group">
+                <label for="exampleInputEmail2">Txn Id</label>
+                <input type="text" class="form-control" id="contact" name="txnid" aria-describedby="emailHelp" required placeholder="Enter your WhatsApp Number">
+            </div>
+</div>
 <div class="container" align="center">
    
-    <button id="submit-form" type="submit" class="btn btn-primary" style="margin-bottom: 20px;"  onclick="document.location.href='PaytmKit/checkout.php';">Proceed To Pay</button>
+    <button id="submit-form" type="submit" name="submit" class="btn btn-primary" style="margin-bottom: 20px;">Proceed To Pay</button>
     
 </div>
     </form>
