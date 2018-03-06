@@ -44,9 +44,9 @@ body{
   }
   
   #team .member .pic {
-    margin-bottom: 15px;
+    margin-top: 45px;
     overflow: hidden;
-    height: 260px;
+    height: 200px;
   }
   
   #team .member .pic img {
