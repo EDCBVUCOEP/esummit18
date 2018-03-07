@@ -16,6 +16,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <!-- Main Stylesheet File -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+    #nav{
+    width: 100%;
+    height: 200px;
+    z-index: 9999;
+    position: absolute;
+    background-size: cover;
+}
+
+#nav_wrapper{
+    height: 100px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    z-index: 9999;
+    filter: alpha (opacity=100);
+}
+
+#nav_wrapper ul li{
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#nav_wrapper a{
+     color: #0072BB;
+     text-decoration: none;
+     padding: 10px;
+}
+
+#nav_wrapper ul li:hover{
+    background:#00DFFC;
+    transition: all 0.45s;
+    opacity: 0.9;
+    filter: alpha (opacity=90);
+    border-radius: 15%;
+}
+
+</style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114670883-1"></script>
@@ -87,7 +128,7 @@
     <!--==========================
       Portfolio Section
     ============================-->
-    <section id="portfolio">
+    <section id="portfolio background-img">
         <div class="container wow fadeInUp">
             <div class="section-header">
                 <h3 class="section-title">EVENTS</h3>
