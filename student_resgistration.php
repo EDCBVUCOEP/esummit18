@@ -1,6 +1,3 @@
-<?php
-    include'registration_process.php';
-?>
 
 <! DOCTYPE html>
 <html>
@@ -15,7 +12,7 @@
 
     <h1 style="padding-top:20px" align="center">REGISTRATION</h1>
 
-<form id="test-form" enctype="multipart/form-data" method="post">
+<form id="test-form" enctype="multipart/form-data" method="post" action="registration_process.php">
 <div class="container">
     
 

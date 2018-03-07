@@ -19,10 +19,10 @@ if(isset($_POST['submit'])){
     $query = "INSERT INTO studentRegistrations( fullname, collegeName, contactNumber, wNumber, email, profession, events, SIPP,  fdate, ftime, Txn_id) VALUES ('$name', '$collegeName', '$contact', '$wcontact', '$email', '$profession', '$events', '$sipp','$date', '$time', '$txnid')";
     // echo $query;
 }
-
 if ($conn->query($query) === TRUE)
  {
     //echo "New record created successfully";
+    header("Location: registration_successful.html");
 } else {
     echo "Error: " . $query . "<br>" . $conn->error;
 }

@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-
+  <link rel="stylesheet" href="css/component.css">
+  <link rel="stylesheet" href="css/default.css">
   <!-- Libraries CSS Files -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
@@ -36,7 +37,6 @@
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
   .logo {
-    content: url("img/esummit_logo[1].png");
     overflow: hidden;
     position: absolute;
     z-index: 9999;
@@ -49,16 +49,17 @@
 </style>
 
 <body>
-  <section id="showcase"> 
+  <section id="showcase">
     <div id="particles-js">
       <div class="logo">
+        <img class="img-fluid" src="img/esummit_logo[1].png" alt="E Summit'18" srcset="">
       </div>
       <br>
       <div class="helo">
         <div class="row">
           <div class="mx-auto">
-            <button id="register" class="btn btn-outline-primary text-center " type="submit" onclick="document.location.href='student_resgistration.php';">REGISTER (Students/Individuals)</button>
-            <button id="register" class="btn btn-outline-danger text-center ml-2" type="submit" onclick="document.location.href='corp_registration.html';">REGISTER (StartUps)</button>
+            <button id="register" class="btn btn-outline-primary text-center mt-1" type="submit" onclick="document.location.href='student_resgistration.php';">REGISTER (Students)</button>
+            <button id="register" class="btn btn-outline-danger text-center ml-2 mt-1" type="submit" onclick="document.location.href='https://goo.gl/forms/Am8NB244Y7yHCEEf2';">REGISTER (StartUps)</button>
           </div>
         </div>
       </div>
@@ -75,61 +76,57 @@
       <div class="section-header">
         <h3 class="section-title">EVENTS</h3>
         <p class="section-description">What We Have For You At E-Summit'18</p>
+        <div class="container">
+          <div class="main">
+            <ul class="cbp-ig-grid">
+              <li>
+                <a href="#">
+                  <span class="cbp-ig-icon cbp-ig-icon-shoe"></span>
+                  <h3 class="cbp-ig-title">Blockchain Basics</h3>
+                  <span class="cbp-ig-category">Technology</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="cbp-ig-icon cbp-ig-icon-ribbon"></span>
+                  <h3 class="cbp-ig-title">Digital Marketing</h3>
+                  <span class="cbp-ig-category">Business</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="cbp-ig-icon cbp-ig-icon-milk"></span>
+                  <h3 class="cbp-ig-title">Artificial Intelligence</h3>
+                  <span class="cbp-ig-category">Technology</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="cbp-ig-icon cbp-ig-icon-whippy"></span>
+                  <h3 class="cbp-ig-title">Business Model</h3>
+                  <span class="cbp-ig-category">Business</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="cbp-ig-icon cbp-ig-icon-spectacles"></span>
+                  <h3 class="cbp-ig-title">Drones and Mobility</h3>
+                  <span class="cbp-ig-category">Technology</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="cbp-ig-icon cbp-ig-icon-doumbek"></span>
+                  <h3 class="cbp-ig-title">Funding 101</h3>
+                  <span class="cbp-ig-category">Business</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-      <div class="row">
-
-        <!-- <div class="col-lg-12">
-          <ul id="portfolio-flters">
-            <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-logo">Logo</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
-        </div> -->
-      </div>
-
-      <div class="row" id="portfolio-wrapper">
-        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-          <a href="">
-            <img src="img/Competition.png" alt="">
-            <div class="details">
-              <h4>Competition</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-          <a href="">
-            <img src="img/Workshop.png" alt="">
-            <div class="details">
-              <h4>Workshop</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-          <a href="">
-            <img src="img/Highlight event.png" alt="">
-            <div class="details">
-              <h4>Highlight event</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-          <a href="">
-            <img src="img/Discussion.png" alt="">
-            <div class="details">
-              <h4>Panel Discussion</h4>
-              <span>Alored dono par</span>
-            </div>
-          </a>
-        </div>
-      </div>
+    </div>
   </section>
   <!-- #portfolio -->
   <!--==========================
@@ -143,7 +140,7 @@
         </h3>
         <h3 class="section-title"></h3>
       </div>
-      <div class="row"  id="portfolio-wrapper">  
+      <div class="row"  id="portfolio-wrapper">
         <div class="col-lg-3 col-md-6 rounded-top" style="border-style: solid; border-color:rgb(47, 165, 255); border: 1px solid; ">
           <div class="member">
             <div class="pic">
@@ -185,7 +182,7 @@
       </div>
     </div>
     </div>
-  </section> 
+  </section>
 
 <!- =======================
     Schedule
@@ -339,6 +336,7 @@
 
 
   <!-- particle script -->
+  <script src="js/modernizr.custom.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
     particlesJS.load('particles-js', 'js/particlesjs-config 3.json', function () {
