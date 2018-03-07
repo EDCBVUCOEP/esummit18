@@ -1,5 +1,15 @@
+*,h1{
+    color: #EEF4ED;
+}
 
 
+
+body{
+    background-image: url(http://www.twitrcovers.com/wp-content/uploads/2014/01/Blue-Navy-Pattern-l.jpg);
+      height: 100vh;
+  background-size: cover;
+    background-position: center;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
