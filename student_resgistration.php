@@ -1,44 +1,19 @@
+
 <! DOCTYPE html>
 <html>
 
 <head>
     <title>Registration</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/resgistration.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!--Header -->
-    <section id="showcase">
-        <div id="nav">
-            <div id="nav_wrapper">
-                <div class="pt-3 mt-3 pull-left ">
-                    <img class="img-fluid md-2 " src="img/edc-white.png" alt="logo" height="50" width="130">
-                </div>
-                <div class="pt-3 mt-3 pull-right">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#portfolio">Events</a></li>
-                        <li><a href="#call-to-action">Schedule</a></li>
-                        <li><a href="#sponsors">Sponsors</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <h1 style="padding-top:20px" align="center">REGISTRATION</h1>
-    
-    <div class="container row mt-3">
-    <div class="container col-md-8">
-    <form id="test-form" enctype="multipart/form-data" method="post" action="registration_process.php">
-        <div class="container">
 
+        <form id="test-form" enctype="multipart/form-data" method="post" action="registration_process.php">
+        <div class="container">
+    
 
             <div class="form-group">
                 <label for="inputFname" class="col-form-label">Name</label>
@@ -68,17 +43,17 @@
                 <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter your email-id">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-
-
-        </div>
-        <div class="container">
-            <h3>Profession</h3>
-            <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio1" name="profession" value="student" class="custom-control-input">
-                <label class="custom-control-label" for="customRadio1">Student:<br></label>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Year Of Graduation</label>
-                    <select class="form-control" name="year" id="year_of_grad">
+        
+    
+</div>
+<div class="container">
+    <h3>Profession</h3>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="profession" value="student" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio1">Student:<br></label>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Year Of Graduation</label>
+    <select class="form-control" name="year" id="year_of_grad">
       <option value="2018">2018</option>
       <option value="2019">2019</option>
       <option value="2020">2020</option>      
@@ -88,202 +63,93 @@
       <option value="2024">2024</option>
       <option value="2025">2025</option>
     </select>
-                </div>
+  </div>
 
-            </div>
-            <div class="custom-control custom-radio">
-                <input onclick="document.getElementById('year_of_grad').disabled = true; document.getElementById('year_of_grad').disabled = false; " type="radio" id="customRadio2" name="profession" value="working Professional" class="custom-control-input">
-                <label class="custom-control-label" for="customRadio2">Working</label>
-            </div>
-        </div>
+</div>
+<div class="custom-control custom-radio">
+  <input onclick="document.getElementById('year_of_grad').disabled = true; document.getElementById('year_of_grad').disabled = false; " type="radio" id="customRadio2" name="profession" value="working Professional" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio2">Working</label>
+</div>
+</div>
 
-        <div class="container">
-            <legend class="col-form-group">Events Participating</legend>
-
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="workshop1" value="Blockchain Basics" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
+<div class="container">
+    <legend class="col-form-group">Events Participating</legend>
+    
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="workshop1" value="Blockchain Basics" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
                 Workshop 1 ( Technical Track : Blockchain Basics)
           </label>
-            </div>
+        </div>
 
-            <div class="form-check">
-                <input class="form-check-input" type="radio" value="Digital Marketing" name="workshop1" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="Digital Marketing" name="workshop1" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
                 Workshop 1 ( Business Track  : Digital Marketing )
         </label>
-            </div>
+        </div>
 
-            <div class="form-check">
-                <input class="form-check-input" type="radio" value="Machine Learning and AI" name="workshop2" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="Machine Learning and AI"  name="workshop2" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
                 Workshop 2 ( Technical Track : Hacking Problems with Machine Learning and AI )
           </label>
-            </div>
+        </div>
 
-            <div class="form-check">
-                <input class="form-check-input" type="radio" value="Business Model" name="workshop2" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="Business Model"  name="workshop2" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
                 Workshop 2 ( Business Track  : Business Model )
           </label>
-            </div>
+        </div>
 
-            <div class="form-check">
-                <input class="form-check-input" type="radio" value="Drones and Mobility" name="workshop3" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="Drones and Mobility" name="workshop3" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
                 Workshop 3 ( Technical Track : Drones and Mobility )
           </label>
-            </div>
+        </div>
 
-            <div class="form-check">
-                <input class="form-check-input" type="radio" value="Funding 101" name="workshop3" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="Funding 101" name="workshop3" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
                 Workshop 3 ( Business Track  : Funding 101 )
           </label>
-            </div>
+        </div>
 
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="jugaad" value="Jugaad" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="jugaad" value="Jugaad" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
                 Jugaad
           </label>
-            </div>
-
         </div>
+    
+</div>
 
-        <div class="container">
-            <legend class="col-form-group">Are you Intrested in Startup Internship And Placements Programe ?
+<div class="container">
+    <legend class="col-form-group">Are you Intrested in Startup Internship And Placements Programe ?
 
-            </legend>
-
-            <div class="radio">
-                <label><input type="radio" name="sipp" value="yes">Yes</label>
-            </div>
-            <div class="radio">
-                <label><input type="radio" name="sipp" value="no">No</label>
-            </div>
+    </legend>
+    
+        <div class="radio">
+            <label><input type="radio" name="sipp" value="yes">Yes</label>
         </div>
-        <div class="container">
+        <div class="radio">
+            <label><input type="radio" name="sipp" value="no">No</label>
+        </div>  
+</div>
+<div class="container">
             <div class="form-group">
                 <label for="exampleInputEmail2">Txn Id</label>
-                <input type="text" class="form-control" id="contact" name="txnid" aria-describedby="emailHelp" required placeholder="Enter your Transaction Number">
+                <input type="text" class="form-control" id="contact" name="txnid" aria-describedby="emailHelp" required placeholder="Enter your WhatsApp Number">
             </div>
-        </div>
-        <div class="container" align="center">
-
-            <button id="submit-form" type="submit" name="submit" class="btn btn-primary" style="margin-bottom: 20px;">Proceed To Pay</button>
-
-        </div>
+</div>
+<div class="container" align="center">
+   
+    <button id="submit-form" type="submit" name="submit" class="btn btn-primary" style="margin-bottom: 20px;">Proceed To Pay</button>
+    
+</div>
     </form>
-    </div> <!-- coloumn division -->
-    <div class="container col-md-4">
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Paytm
-</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
-  UPI
-</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2">
-  Cash
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Paytm QR</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="img/paytm.png" width="90%" height="90%" alt="Paytm QR">
-        <div class="form-group">
-            <label for="exampleInputEmail2">Transaction Number</label>
-            <input type="text" class="form-control" id="contact" name="txnid" aria-describedby="emailHelp" required placeholder="Enter your Transaction Number">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-   <!-- Modal 2-->
-<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">UPI QR</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="img/upi.jpeg" height="65%" width="100%" alt="UPI QR">
-        <h6 align="center">OR</h6>
-        <h3 class="text-center">8087424160@upi</h3>
-        <div class="form-group">
-            <label for="exampleInputEmail2">Transaction Number</label>
-            <input type="text" class="form-control" id="contact" name="txnid" aria-describedby="emailHelp" required placeholder="Enter your Transaction Number">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-      <!-- Modal 3-->
-<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">UPI QR</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-            <label for="exampleInputEmail2">Transaction Number</label>
-            <input type="text" class="form-control" id="contact" name="txnid" aria-describedby="emailHelp" required placeholder="Enter your Transaction Number">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-    </div> 
-    <footer id="footer">
-        <div class="footer-top">
-            <div class="container">
-
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="copyright">
-                <br>
-                <strong>Entreprenurship Development Cell</strong>
-                <br>
-                <br>Bharati Vidyapeeth College of Engineering , Pune.
-                <br> All Rights Reserved
-                <br>Made With<i class="fa fa-heart fa-heart-red text-center">By Team EDC.</i>
-                <a href="#" class="back-to-top pull-right ">
-          <i class="fa fa-chevron-up  " style="font-size:48px;color:rgb(0, 109, 193)"></i>
-        </a>
-            </div>
-
-        </div>
-
-    </footer>
-    <!-- #footer -->
 
 </body>
 
