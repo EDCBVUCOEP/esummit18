@@ -13,10 +13,10 @@ include 'config.php';
 @$txnid = $_POST['txnid'];
 date_default_timezone_set('Asia/Kolkata');
 $date=date("Y-m-d");
-$time=time("H:i:s");
+$time=date("H:i:sa");
 
 if(isset($_POST['submit'])){
-    $query = "INSERT INTO studentRegistrations( fullname, collegeName, contactNumber, wNumber, email, profession, events, SIPP,  fdate, ftime, Txn_id) VALUES ('$name', '$collegeName', '$contact', '$wcontact', '$email', '$profession', '$events', '$sipp','$date', '$time', '$txnid')";
+    $query = "INSERT INTO esummit18studentRegistration( fullname, collegeName, contactNumber, wNumber, email, profession, events, SIPP,  fdate, ftime, Txn_id) VALUES ('$name', '$collegeName', '$contact', '$wcontact', '$email', '$profession', '$events', '$sipp','$date', '$time', '$txnid')";
     // echo $query;
 }
 if ($conn->query($query) === TRUE)

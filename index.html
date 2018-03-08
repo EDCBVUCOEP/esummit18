@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <!-- Main Stylesheet File -->
     <link rel="stylesheet" href="css/style.css">
-    <link href="img//favicon.png" rel="icon">
+    <link href="img/favicon.png" rel="icon">
 <style>
     #nav{
     width: 100%;
@@ -49,12 +49,28 @@
         padding: 10px;
     }
 
+    #nav_wrapper a:hover:before , #nav_wrapper a:hover:after {
+        width: 50%;
+        text-decoration: none;
+        }
+
+
     #nav_wrapper ul li:hover{
         background:rgba(247, 247, 247, 0.753);
         transition: all 0.45s;
         opacity: 0.9;
         filter: alpha (opacity=90);
     }
+
+
+.logo {
+    overflow: hidden;
+    position: absolute;
+    z-index: 9999;
+    width: 50%;
+    top: 27%;
+    left: 25%;
+}
 
 </style>
 
@@ -73,19 +89,6 @@
 
     </script>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-    .logo {
-        overflow: hidden;
-        position: absolute;
-        z-index: 9999;
-        width: 50%;
-        top: 27%;
-        left: 25%;
-    }
-
-</style>
 
 <body>
     <section id="showcase">
@@ -134,11 +137,11 @@
                 <h3 class="section-title mt-5">EVENTS</h3>
                 <p class="section-description">What We Have For You At E-Summit'18</p>
                 <div class="container">
-                    <div class="main">
+                    <div class="mains   ">
                         <ul class="cbp-ig-grid">
                             <li>
                                 <a href="#">
-                  <span class="cbp-ig-icon cbp-ig-icon-shoe"></span>
+                  <span class="cbp-ig-icon cbp-ig-icon-shoe"> </span>
                   <h3 class="cbp-ig-title">Blockchain Basics</h3>
                   <span class="cbp-ig-category">Technology</span>
                 </a>
