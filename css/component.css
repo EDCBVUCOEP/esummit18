@@ -67,7 +67,7 @@
 
 .cbp-ig-icon:before {
 	font-family: 'anyoldicon';
-	font-size: 14em;
+	font-size: 10em;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -78,7 +78,7 @@
 }
 
 .cbp-ig-icon-shoe:before {
-	content: "img/artificial-intelligence.svg";
+	content: url("../img/icons/resources.png");
 }
 
 .cbp-ig-icon-ribbon:before {
