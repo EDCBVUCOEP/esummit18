@@ -12,6 +12,10 @@
   background-size: cover;
 }
 
+#showcase #logo{
+  float: left;
+}
+
 .overlay-detail {
   margin: 0 auto;
 }
