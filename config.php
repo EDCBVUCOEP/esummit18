@@ -1,10 +1,19 @@
 <?php
 
+// godaddy server
+
+// $servername = "localhost";
+// $username = "edcbvucoepDB";
+// $password = "Edcbvucoe@1234";
+// $db = "esummit";
+
+//localhost server
 
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "esummit18";
+$db = "esummit";
+
 // Create connection
 $conn = new mysqli($servername, $username, $password ,$db);
 
